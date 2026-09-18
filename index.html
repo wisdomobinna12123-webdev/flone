@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="icon" href="favicon.jpg" type="image/jpg">
+    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Flone — Modern Fashion Essentials</title>
+  <meta name="description" content="Flone — a modern fashion template with free shipping, 24/7 support, and a clean shopping experience." />
+  <meta name="theme-color" content="#5ac95b" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Flone — Modern Fashion Essentials" />
+  <meta property="og:description" content="A clean, modern fashion store template." />
+  <meta property="og:image" content="hero.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="favicon.ico" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="flone.css" />
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div class="logo"><h3>Flone.</h3></div>
+
+      <ul class="list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#catalogue">Shop</a></li>
+        <li><a href="#blogs">Blogs</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+
+      <div class="header-icons">
+        <button type="button" class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">
+          <i class="fa-solid fa-moon" aria-hidden="true"></i>
+        </button>
+
+        <button type="button" class="icon-btn cart-btn" id="cartBtn" aria-label="Open cart">
+          <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+          <span class="badge" id="cartBadge">0</span>
+        </button>
+
+        <button type="button" class="icon-btn" id="dropBtn" aria-label="Open menu" aria-expanded="false">
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="dropdown" id="dropdown">
+    <ul class="dropdown-list">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#catalogue">Shop</a></li>
+      <li><a href="#blogs">Blogs</a></li>
+      <li><a href="#footer">Contact</a></li>
+    </ul>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-slide is-active"></div>
+      <div class="hero-slide"></div>
+
+      <div class="hero-text">
+        <h1>Elevate your dress style with Flone</h1>
+        <p>Discover timeless pieces designed for the modern wardrobe. Free shipping worldwide.</p>
+        <a href="#catalogue">
+          <button class="cta" type="button">
+            Shop now
+            <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+          </button>
+        </a>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats">
+      <div class="stat-card">
+        <svg width="35" height="35" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M3 7H16V17H3V7Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+          <path d="M16 10H19L21 13V17H16V10Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+          <circle cx="7" cy="18" r="2" stroke="currentColor" stroke-width="1.2"/>
+          <circle cx="18" cy="18" r="2" stroke="currentColor" stroke-width="1.2"/>
+          <path d="M7 7V4H12V7" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+          <path d="M9 4V7" stroke="currentColor" stroke-width="1.2"/>
+          <path d="M7 5.5H12" stroke="currentColor" stroke-width="1.2"/>
+        </svg>
+        <h3>Free shipping</h3>
+        <p>We offer free shipping services.</p>
+      </div>
+
+      <div class="stat-card">
+        <svg width="35" height="35" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.2"/>
+          <path d="M12 7V12L15 14" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3>24/7 support</h3>
+        <p>We're here whenever you need us.</p>
+      </div>
+
+      <div class="stat-card">
+        <svg width="35" height="35" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.2"/>
+          <path d="M14.5 8.5C14 8 13.2 7.5 12 7.5C10.6 7.5 9.5 8.3 9.5 9.4C9.5 10.5 10.4 11 12 11.5C13.6 12 14.5 12.5 14.5 13.6C14.5 14.8 13.4 15.5 12 15.5C10.8 15.5 9.8 15 9.2 14.4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+          <path d="M12 5.5V18.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+        </svg>
+        <h3>Money return</h3>
+        <p>30-day money-back guarantee.</p>
+      </div>
+    </section>
+
+    <!-- NEW ARRIVALS -->
+    <section class="new-arrivals" id="catalogue">
+      <div class="section-head">
+        <h2>New arrivals</h2>
+        <span class="line" aria-hidden="true"></span>
+        <p>Fresh drops, crafted with care.</p>
+      </div>
+
+      <div class="items-grid" id="itemsGrid">
+        <!-- Cards injected by JS -->
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blogs" class="blog">
+      <div class="section-head">
+        <h2>Featured blogs</h2>
+        <span class="line" aria-hidden="true"></span>
+        <p>Stories, style tips, and inspiration.</p>
+      </div>
+
+      <div class="blog-grid" id="blogGrid">
+        <!-- Cards injected by JS -->
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="name">
+      <h2>Flone.</h2>
+      
+      
+      <p>All rights reserved &copy; <span id="year">2026</span></p>
+<small class="egg-hint">Psst — try typing <kbd>flone</kbd> or click the year 👀</small>
+    </div>
+
+    <div class="socials">
+      <h2>Socials</h2>
+      <div class="social-links">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
+        <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+      </div>
+    </div>
+
+    <div class="newsletter">
+      <h2>Newsletter</h2>
+      <p>Sign up for our newsletter to get the latest content.</p>
+
+      <form class="newsletter-form" id="newsletterForm" novalidate>
+        <label for="email" class="sr-only">Email address</label>
+        <input type="email" required placeholder="Enter your email..." id="email" name="email" />
+        <button type="submit" class="submit">Submit</button>
+      </form>
+      <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+    </div>
+  </footer>
+
+  <!-- ============================================
+       Wishlist Floating Button
+       ============================================ -->
+  <button type="button" class="wishlist-fab" id="wishlistFab" aria-label="View wishlist">
+    <i class="fa-solid fa-heart" aria-hidden="true"></i>
+    <span class="badge" id="wishlistBadge">0</span>
+  </button>
+
+  <!-- ============================================
+       Cart Drawer
+       ============================================ -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+    <header class="cart-header">
+      <h3>Your cart</h3>
+      <button type="button" id="cartClose" aria-label="Close cart">
+        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+      </button>
+    </header>
+
+    <div class="cart-items" id="cartItems"></div>
+
+    <footer class="cart-footer">
+      <div class="cart-total">
+        <span>Total</span>
+        <strong id="cartTotal">$0.00</strong>
+      </div>
+      <button class="cta cart-checkout" type="button">Checkout</button>
+    </footer>
+  </aside>
+
+  <!-- ============================================
+       Easter Egg — Catch the Bags
+       ============================================ -->
+  <div class="egg-modal" id="eggModal" role="dialog" aria-modal="true" aria-label="Mini game">
+    <div class="egg-box">
+      <header class="egg-header">
+        <h3>👜 Catch the Bags</h3>
+        <button type="button" id="eggClose" aria-label="Close game">
+          <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+        </button>
+      </header>
+
+      <div class="egg-hud">
+        <span>Score: <strong id="eggScore">0</strong></span>
+        <span>Time: <strong id="eggTime">10</strong>s</span>
+      </div>
+
+      <div class="egg-stage" id="eggStage">
+        <button class="cta egg-start-btn" id="eggStart" type="button">Start game</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="flone.js"></script>
+</body>
+</html>
