@@ -15,7 +15,7 @@ A modern, responsive fashion store template built with vanilla HTML, CSS, and Ja
 - `index.html` — main page
 - `flone.css` — all styles (design tokens at the top)
 - `flone.js` — all interactions
-- `assets/` — images (replace with your own)
+- `images` — images
 
 ## Customization
 
